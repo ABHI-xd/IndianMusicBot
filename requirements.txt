@@ -2,7 +2,7 @@ pyrogram
 tgcrypto
 py-tgcalls[pyrogram]
 pytube
-yt_dlp
+git+https://github.com/vexeraop/download
 youtube_dl
 heroku3
 rich
