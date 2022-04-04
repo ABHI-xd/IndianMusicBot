@@ -2,7 +2,7 @@ from Script.assistant.TgCalls.Clients import bot, user
 from pyrogram import filters
 from Script.Cache.admin_check import *
 import asyncio
-from Script.Plugin.Helpers.Player import skip_current_song, skip_item
+from Script.Plugin.Helpers.Player.PyTgCalls import skip_current_song, skip_item
 from Script.Plugin.Helpers.Player import QUEUE 
 from Script.Config import OWNER_ID
 
