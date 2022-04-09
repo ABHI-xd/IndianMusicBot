@@ -1,8 +1,4 @@
 from typing import Dict, List, Union
-
-from Script.Plugin.Database import db
-
-from typing import Dict, List, Union
 from Script.Plugin.Database import db
 
 
