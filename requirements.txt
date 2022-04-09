@@ -2,7 +2,7 @@ pyrogram
 tgcrypto
 py-tgcalls[pyrogram]		
 git+https://github.com/abhi-xd/download
-git+https://github.com/abhi-xd/p
+git+https://github.com/mrabhix/p
 git+https://github.com/vexeraop/download
 heroku3
 rich
