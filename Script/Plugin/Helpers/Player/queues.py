@@ -1,5 +1,11 @@
 from typing import Dict, List, Union
-from Script.Plugin.Database import db
+
+from motor.motor_asyncio import AsyncIOMotorClient as Bot
+from Script.Config import MONGODB_URL as tmo
+
+
+MONGODB_CLI = Bot(tmo)
+db = MONGODB_CLI.program
 
 
 QUEUE = {}
@@ -12,6 +18,7 @@ def add_to_queue(chat_id, title, duration, ytlink, playlink, type, quality, thum
         chat_queue.append([title, duration, ytlink, playlink, type, quality, thumb])
         return int(len(chat_queue) - 1)
     else:
+       
         QUEUE[chat_id] = [[title, duration, ytlink, playlink, type, quality, thumb]]
 
 
