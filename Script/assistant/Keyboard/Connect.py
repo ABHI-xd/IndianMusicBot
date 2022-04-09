@@ -8,7 +8,7 @@ logging.basicConfig(
   level=logging.INFO,
   format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
-logging.getLogger("yt_dlp").setLevel(logging.ERROR)
+
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("PyTgCalls").setLevel(logging.ERROR)
 
