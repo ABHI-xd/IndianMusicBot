@@ -9,7 +9,6 @@ rich
 aiohttp
 gitpython
 motor
-
 aiofiles
 dnspython
 python-dotenv
