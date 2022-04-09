@@ -1,7 +1,5 @@
 pyrogram
 tgcrypto
-py-tgcalls[pyrogram]
-git+https://github.com/mrabhix/p
 
 
 heroku3
@@ -9,7 +7,7 @@ rich
 aiohttp
 gitpython
 motor
-youtube_search
+
 aiofiles
 dnspython
 python-dotenv
