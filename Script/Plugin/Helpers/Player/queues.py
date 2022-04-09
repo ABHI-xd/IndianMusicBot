@@ -1,3 +1,11 @@
+from typing import Dict, List, Union
+
+from Script.Plugin.Database import db
+
+from typing import Dict, List, Union
+from Script.Plugin.Database import db
+
+
 QUEUE = {}
 
 
@@ -34,3 +42,21 @@ def clear_queue(chat_id):
         return 1
     else:
         return 0
+
+    
+async def yar_aisa_na_kar(chat_id: int) -> bool:
+    chat = await db.find_one({"chat_id": chat_id})
+    if not chat:
+        return False
+    return True
+
+
+async def remove_queue(chat_id: int):
+    is_served = await yar_aisa_na_kar(chat_id)
+    if not is_served:
+        return
+    return await db.delete_one({"chat_id": chat_id})
+
+async def yar_aisa_na_kar(chat_id: int) -> bool:    chat = await db.find_one({"chat_id": chat_id})    if not chat:        return False    return True
+
+async def remove_queue(chat_id: int):    is_served = await yar_aisa_na_kar(chat_id)    if not is_served:        return    return await db.delete_one({"chat_id": chat_id})
