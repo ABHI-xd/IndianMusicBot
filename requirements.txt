@@ -3,7 +3,7 @@ tgcrypto
 py-tgcalls[pyrogram]
 pytube
 git+https://github.com/vexeraop/download
-youtube_dl
+
 heroku3
 rich
 aiohttp
