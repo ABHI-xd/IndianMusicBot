@@ -9,7 +9,7 @@ from Script.Cache.admin_check import *
 from Script.Plugin.Helpers.Player import QUEUE
 
 
-@bot.on_message(filters.command("unmute") & filters.group & filters.user(OWNER_ID))
+@bot.on_message(filters.command("unmute") & filters.group )
 @is_admin
 async def unmute(_, message):
     await message.delete()
