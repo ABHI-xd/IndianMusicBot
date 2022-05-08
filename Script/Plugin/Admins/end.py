@@ -14,7 +14,7 @@ LIVE_CHATS = []
 
 
 
-@bot.on_message(filters.command(["stop", "end"]) & filters.group & filters.user(OWNER_ID))
+@bot.on_message(filters.command(["stop", "end"]) & filters.group )
 @is_admin
 async def end(_, message):
     await message.delete()
