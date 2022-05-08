@@ -9,7 +9,7 @@ from Script.Config import OWNER_ID
 from Script.Plugin.Helpers.Player import QUEUE
 
 
-@bot.on_message(filters.command("resume") & filters.group & filters.user(OWNER_ID))
+@bot.on_message(filters.command("resume") & filters.group )
 @is_admin
 async def resume(_, message):
     await message.delete()
