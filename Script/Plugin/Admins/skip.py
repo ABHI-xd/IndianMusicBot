@@ -7,7 +7,7 @@ from Script.Plugin.Helpers.Player import QUEUE
 from Script.Config import OWNER_ID
 
 
-@bot.on_message(filters.command("skip") & filters.group & filters.user(OWNER_ID))
+@bot.on_message(filters.command("skip") & filters.group )
 @is_admin
 async def skip(_, message):
     await message.delete()
